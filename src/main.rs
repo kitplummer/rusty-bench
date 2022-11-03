@@ -1,3 +1,6 @@
+#[cfg(target_os = "hermit")]
+use hermit_sys as _;
+
 use tiny_bench::black_box;
 
 fn main() {
